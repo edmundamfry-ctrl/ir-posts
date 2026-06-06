@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IR Posts</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; color: #ddd; font-family: Georgia, serif; min-height: 100vh; }
+header { padding: 18px 20px; border-bottom: 1px solid #1e1e1e; display: flex; align-items: center; }
+header h1 { font-size: 16px; font-weight: 400; flex: 1; }
+header span { font-family: monospace; font-size: 9px; color: #222; text-transform: uppercase; }
+main { max-width: 620px; margin: 0 auto; padding: 20px; }
+.tabs { display: flex; gap: 5px; margin-bottom: 20px; }
+.tab { padding: 6px 12px; font-size: 13px; cursor: pointer; border-radius: 2px; border: 1px solid #282828; background: transparent; color: #555; font-family: Georgia, serif; }
+.tab.on { border-color: #c8a96e; background: rgba(200,169,110,0.09); color: #c8a96e; }
+.card { text-align: left; display: block; width: 100%; padding: 12px 14px; margin-bottom: 5px; background: #161616; border: 1px solid #1e1e1e; border-radius: 2px; cursor: pointer; }
+.card .jur { font-family: monospace; font-size: 9px; text-transform: uppercase; margin-bottom: 4px; }
+.card .hl { font-size: 13px; color: #ddd; line-height: 1.4; margin-bottom: 3px; }
+.card .sub { font-size: 11px; color: #444; line-height: 1.5; }
+.ghost { padding: 8px 16px; font-size: 11px; font-family: monospace; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; border-radius: 2px; cursor: pointer; border: 1px solid #282828; background: transparent; color: #555; }
+.gold-btn { padding: 8px 16px; font-size: 11px; font-family: monospace; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; border-radius: 2px; cursor: pointer; border: none; background: #c8a96e; color: #111; }
+.post-box { background: #161616; border: 1px solid #1e1e1e; border-radius: 2px; }
+.post-header { padding: 10px 14px; border-bottom: 1px solid #1a1a1a; font-family: monospace; font-size: 9px; text-transform: uppercase; }
+.post-body { padding: 18px 14px; font-size: 14px; line-height: 1.8; color: #c8c4b8; white-space: pre-wrap; }
+.post-footer { padding: 10px 14px; border-top: 1px solid #1a1a1a; display: flex; gap: 5px; flex-wrap: wrap; }
+.error { background: rgba(200,60,60,0.07); border: 1px solid rgba(200,60,60,0.15); border-radius: 2px; padding: 12px; color: #c07070; font-size: 11px; font-family: monospace; margin-bottom: 16px; white-space: pre-wrap; word-break: break-all; }
+.loading { text-align: center; padding: 40px; font-family: monospace; font-size: 12px; color: #444; }
+textarea { width: 100%; background: #161616; border: 1px solid #1e1e1e; color: #ddd; padding: 12px; font-size: 13px; font-family: Georgia, serif; border-radius: 2px; min-height: 100px; resize: vertical; }
+.wide { width: 100%; margin-bottom: 10px; }
+.label { font-family: monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 10px; }
+.footer { margin-top: 32px; font
